@@ -1,0 +1,23 @@
+Pterodactyl
+
+
+                                         
+version '3.8'
+
+services:
+Wings:
+image: ghcr.io/Pterodactyl/Wings:v1.6.1
+restart: always
+networks:
+-Wings0
+ports:
+- "8080.8080"
+- "2022.2022"
+- "443.443"
+tty: true
+environment:
+TZ: "UTS"
+WINGS_UID: 988
+WINGS_GID: 988
+WINGS_USERNAME: Pterodactyl
+volumes
